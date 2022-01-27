@@ -1,17 +1,52 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
-  "scripts": {
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "Irlix-frontend-test",
+  "private": true,
+  "description": "Личный проект Irlix-test",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.4.0",
+    "browser-sync": "2.27.7",
+    "del": "^6.0.0",
+    "gulp": "4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.0.12",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "8.3.11",
+    "postcss-csso": "5.0.1",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.11"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "src/*.html",
+    "src/js/**/*.js",
+    "src/img/**/*.svg",
+    "src/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "^16"
+  },
+  "type": "module"
 }
