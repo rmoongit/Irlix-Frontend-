@@ -58,7 +58,7 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('src/img/**/*.{png,jpg,svg}')
+  return gulp.src('src/img/**/*.{png,jpg,svg}', {allowEmpty: true})
     .pipe(gulp.dest('build/img'))
 }
 
@@ -93,7 +93,8 @@ const copy = (done) => {
     'src/*.ico',
     'src/manifest.webmanifest',
   ], {
-    base: 'src'
+    base: 'src',
+    allowEmpty: true
   })
     .pipe(gulp.dest('build'))
   done();
