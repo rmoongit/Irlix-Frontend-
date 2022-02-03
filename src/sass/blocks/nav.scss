@@ -1,0 +1,12 @@
+.nav__list {
+  @include clear-list;
+  display: flex;
+}
+
+.nav__button {
+  color: $grey;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  font-family: $main-font;
+}

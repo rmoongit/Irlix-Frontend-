@@ -1,0 +1,103 @@
+.card-description {
+  min-height: 400px;
+  background-image: url("../img/blackberry-detail-mobile.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding-top: 32px;
+}
+
+.card-description__back {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background-color: $button-color;
+  outline: none;
+}
+
+.card-description__logo {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.card-description__info {
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg width='384' height='203' viewBox='0 0 384 203' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80.5 136.243C5.5 124.743 -18 92.7434 -26 45.2434L-41 0.243414H535.5C544.667 -1.92325 470 45.2434 441 111.5C409.518 183.426 337.5 196.243 296 202.243C254.5 208.243 155.5 147.743 80.5 136.243Z' fill='%23201F2E'/%3E%3C/svg%3E%0A");
+  background-color: $black;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-top-right-radius: 32px;
+  transform: translate(0, 50%);
+  bottom: -200px;
+  left: 0;
+  padding-top: 32px;
+  min-height: 600px;
+  width: 100%;
+}
+
+.card-description__subtitle {
+  color: $white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+
+  &--cook {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px;
+  }
+}
+
+.card-description__text {
+  display: block;
+  line-height: 21px;
+  color: $grey;
+  margin-bottom: 32px;
+}
+
+.card-description__list {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.card-description__item {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+
+  td {
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey;
+  }
+
+  td:first-child {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      margin: 5px 5px;
+      border-bottom: 1px dashed $grey;
+    }
+  }
+}
+
+.card-description__recipe {
+  font-size: 18px;
+  line-height: 21px;
+  color: $grey;
+  text-align: start;
+}
+
+.card-description__button {
+  top: -10px;
+  right: 20px;
+}

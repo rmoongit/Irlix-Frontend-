@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Irlix-Pub</title>
+  <title>Irlix-Search</title>
   <meta name="description" content="Irlix-frontend">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,14 +20,14 @@
     <div class="header__wrapper">
 
       <div class="header__info-block">
-        <h1 class="header__title">Главная</h1>
+        <h1 class="header__title">Поиск</h1>
         <p class="header__date">
           <time datetime="2021-07-17"></time>
           17 июля 2021
         </p>
       </div>
 
-      <a href="#" class="header__logo-link">
+      <a href="index.html" class="header__logo-link">
         <img class="header__logo" src="img/main-logo.svg" width="145" height="172" alt="Логотип Irlix">
       </a>
     </div>
@@ -60,66 +60,28 @@
   </div>
 </header>
 
-<section class="card">
-  <h2 class="visually-hidden">Алкаголь</h2>
+<section class="card card--search">
+  <h2 class="visually-hidden">Поиск</h2>
   <div class="container">
 
-    <article class="card__item">
-      <h2 class="visually-hidden">Blackberry</h2>
-      <button class="card__button-favourite favourite-btn" type="button">
-        <svg class="favourite-btn__img" width="20" height="32" aria-label="добавить в избранное">
-          <use xlink:href="img/sprite.svg#label"></use>
-        </svg>
-      </button>
-
-      <div class="card__item-discount">
-        <p class="card__item-discount-subtitle">30%</p>
-        <span class="card__item-text">Алкоголь</span>
-      </div>
+    <article class="card__item card__item--search">
+      <h2 class="card__item-title">Нет результатов</h2>
+      <picture>
+        <img class="card__img" src="img/search-mobile.png" width="320" height="421" alt="Ничего не найдено">
+      </picture>
 
       <div class="card__item-name">
-        <p class="card__item-name-subtitle">Blackberry</p>
-        <span class="card__item-name-text">Fresh drink</span>
+        <p class="card__item-name-subtitle">Пусто</p>
+        <span class="card__item-name-text card__item-name-text--search">Попробуйте изменить запрос</span>
       </div>
 
-      <a class="card__link" href="details.html">
-        <picture>
-          <img class="card__img" src="img/blackberry-mobile.png" width="320" height="421" alt="Коктейль blackberry">
-        </picture>
-      </a>
-    </article>
-
-    <article class="card__item">
-      <h2 class="visually-hidden">Мохито</h2>
-      <button class="card__button-favourite favourite-btn" type="button">
-        <svg class="favourite-btn__img" width="20" height="32" aria-label="добавить в избранное">
-          <use xlink:href="img/sprite.svg#label"></use>
-        </svg>
-      </button>
-
-      <div class="card__item-discount">
-        <p class="card__item-discount-subtitle">40%</p>
-        <span class="card__item-text">Алкоголь</span>
-      </div>
-
-      <div class="card__item-name">
-        <p class="card__item-name-subtitle">Мохито</p>
-        <span class="card__item-name-text">Fresh drink</span>
-      </div>
-
-      <a class="card__link" href="#">
-        <picture>
-          <img class="card__img" src="img/lime-mobile.png" width="320" height="421" alt="Коктейль lime">
-        </picture>
-      </a>
     </article>
   </div>
-
 </section>
 
 <div class="search">
   <div class="search__wrapper">
-    <a href="search.html" class="search__link-favourite">Избранное</a>
+    <a href="#" class="search__link-favourite">Избранное</a>
 
     <button class="search__button button">
       <svg class="search__icon" width="24" height="24" aria-label="кнопка поиска">

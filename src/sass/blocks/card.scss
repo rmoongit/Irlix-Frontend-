@@ -1,0 +1,75 @@
+
+.card__item {
+  position: relative;
+  margin-bottom: 32px;
+
+  &--search {
+    margin-bottom: 175px;
+  }
+}
+
+.card__item-title {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  color: $white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.card__button-favourite {
+  top: -10px;
+  right: 20px;
+}
+
+.card__item-discount {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 20px 0;
+  min-height: 80px;
+  width: 80px;
+  background-color: $black;
+  border-radius: 24px;
+}
+
+.card__item-discount-subtitle {
+  color: $white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  text-align: center;
+}
+
+.card__item-text {
+  display: block;
+  line-height: 16px;
+  color: $grey;
+  text-align: center;
+}
+
+.card__item-name {
+  position: absolute;
+  left: 32px;
+  bottom: 24px;
+}
+
+.card__item-name-subtitle {
+  color: $white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.card__item-name-text {
+  display: block;
+  line-height: 21px;
+  color: $grey;
+}

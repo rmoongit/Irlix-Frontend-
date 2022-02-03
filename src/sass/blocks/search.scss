@@ -1,0 +1,35 @@
+.search {
+  background-color: $black;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.search__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 30px;
+  min-height: 96px;
+  width: 100vw;
+}
+
+.search__link-favourite {
+  display: block;
+  margin: 0;
+  color: $grey;
+  background-color: $button-color;
+  font-size: 18px;
+  line-height: 17px;
+  padding: 15px 24px;
+  text-decoration: none;
+  border-radius: 32px;
+  width: 145px;
+}
+
+.search__button {
+  padding: 14px;
+}

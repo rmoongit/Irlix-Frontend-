@@ -4,3 +4,15 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/page.scss";
+@import "global/visually-hidden";
+
+//blocks
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/button";
+@import "blocks/favourite-btn";
+@import "blocks/card";
+@import "blocks/search";
+@import "blocks/card-description";
