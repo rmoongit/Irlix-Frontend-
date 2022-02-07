@@ -1,10 +1,24 @@
+.card__wrapper {
+  @media (min-width: $display-tablet) {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 32px;
+    flex-wrap: wrap;
+
+    &--search {
+      justify-content: center;
+    }
+  }
+}
 
 .card__item {
   position: relative;
   margin-bottom: 32px;
+  min-height: 332px;
 
   &--search {
     margin-bottom: 175px;
+    flex-grow: 1;
   }
 }
 

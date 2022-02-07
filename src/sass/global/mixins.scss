@@ -3,17 +3,15 @@
 @mixin container() {
   margin: 0 auto;
   padding: 0 30px 0;
-  max-width: 320px;
+  min-width: 320px;
 }
 
 @mixin tablet() {
-  padding: 0 30px 0;
-  max-width: 768px;
+  width: 100%;
 }
 
 @mixin desktop() {
   max-width: 1440px;
-  padding: 0 110px 0;
 }
 
 //lists

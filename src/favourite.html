@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Irlix-Search</title>
+  <title>Irlix-Favourite</title>
   <meta name="description" content="Irlix-frontend">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
@@ -20,7 +20,7 @@
     <div class="header__wrapper">
 
       <div class="header__info-block">
-        <h1 class="header__title">Поиск</h1>
+        <h1 class="header__title">Избранные</h1>
         <p class="header__date">
           <time datetime="2021-07-17"></time>
           17 июля 2021
@@ -60,32 +60,12 @@
   </div>
 </header>
 
-<section class="card card--search">
-  <h2 class="visually-hidden">Поиск</h2>
-  <div class="container">
-    <div class="card__wrapper card__wrapper--search">
-
-      <article class="card__item card__item--search">
-        <h2 class="card__item-title">Нет результатов</h2>
-        <picture>
-          <img class="card__img" src="img/search-mobile.png" width="320" height="421" alt="Ничего не найдено">
-        </picture>
-
-        <div class="card__item-name">
-          <p class="card__item-name-subtitle">Пусто</p>
-          <span class="card__item-name-text card__item-name-text--search">Попробуйте изменить запрос</span>
-        </div>
-
-      </article>
-    </div>
-  </div>
-</section>
-
 <div class="search">
   <div class="search__wrapper">
-    <form class="search__form" role="search" id="form">
+    <a href="index.html" class="search__link-favourite">Назад</a>
 
-      <input class="search__input visually-hidden" type="search" id="search" name="search" placeholder="Введите название" aria-label="Поиск по сайту">
+    <form class="search__form" role="search" id="form">
+      <input class="search__input search__input--index" type="search" id="search" name="search" placeholder="Введите название" aria-label="Поиск по сайту">
       <button class="search__button button">
         <svg class="search__icon" width="24" height="24" aria-label="кнопка поиска">
           <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -99,5 +79,4 @@
 <script src="js/script.min.js"></script>
 
 </body>
-
 </html>

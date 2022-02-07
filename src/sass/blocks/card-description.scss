@@ -3,7 +3,7 @@
   background-image: url("../img/blackberry-detail-mobile.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   padding-top: 32px;
 }
@@ -28,7 +28,7 @@
   background-color: $black;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   border-top-right-radius: 32px;
   transform: translate(0, 50%);
   bottom: -200px;
@@ -91,6 +91,7 @@
 }
 
 .card-description__recipe {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: $grey;

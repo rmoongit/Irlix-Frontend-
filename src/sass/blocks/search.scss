@@ -6,6 +6,7 @@
   bottom: 0;
   left: 0;
   z-index: 2;
+  width: 100%;
 }
 
 .search__wrapper {
@@ -14,7 +15,6 @@
   align-items: center;
   padding: 24px 30px;
   min-height: 96px;
-  width: 100vw;
 }
 
 .search__link-favourite {
@@ -27,9 +27,32 @@
   padding: 15px 24px;
   text-decoration: none;
   border-radius: 32px;
-  width: 145px;
+
+  &:active {
+    background-color: $button-active;
+    color: $grey-light;
+  }
+
+  &:focus {
+    outline: none;
+    border: solid 1px $red;
+    color: $red;
+  }
 }
 
 .search__button {
   padding: 14px;
+}
+
+.search__input {
+  border-radius: 32px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: $grey;
+  padding: 15px;
+  background-color: $button-color;
+  &--index {
+    display: none;
+  }
 }

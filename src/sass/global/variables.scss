@@ -4,16 +4,22 @@ $main-font: "Roboto", "Arial", sans-serif;
 
 //colors
 
-$body-color: #201F2E;
+$body-color: #201f2e;
 
 //font-color
 
-$white: #FFFF;
-$grey: #C4C1CF;
-$black: #0E0D13;
+$white: #ffff;
+$grey: #c4c1cf;
+$black: #0e0d13;
+$grey-light: #e9e6f2;
+$red: #ff005c;
 
 //backgrounds
-$back-grey: #E5E5E5;
-$button-color: #44414E;
+$back-grey: #e5e5e5;
+$button-color: #44414e;
+$button-active: #353240;
 
+//display
 
+$display-tablet: 768px;
+$display-desktop: 1024px;

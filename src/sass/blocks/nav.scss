@@ -1,6 +1,10 @@
 .nav__list {
   @include clear-list;
   display: flex;
+
+  @media (min-width: $display-tablet) {
+    min-width: 384px;
+  }
 }
 
 .nav__button {
@@ -9,4 +13,11 @@
   line-height: 21px;
   font-weight: 300;
   font-family: $main-font;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $grey;
+    border-radius: 32px;
+  }
+
 }
