@@ -15,6 +15,7 @@ import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin'
 
 // Styles
+
 export const styles = () => {
   return gulp.src('src/sass/style.scss', {sourcemaps: true})
     .pipe(plumber())
