@@ -22,8 +22,7 @@
       <div class="header__info-block">
         <h1 class="header__title">Главная</h1>
         <p class="header__date">
-          <time datetime="2021-07-17"></time>
-          17 июля 2021
+          <time datetime="2021-07-17">17 июля 2021</time>
         </p>
       </div>
 
@@ -63,10 +62,9 @@
 <section class="card">
   <div class="container">
     <div class="card__wrapper">
-      <h2 class="visually-hidden">Алкаголь</h2>
+      <h1 class="visually-hidden">Алкоголь</h1>
 
       <article class="card__item">
-        <h2 class="visually-hidden">Blackberry</h2>
         <button class="card__button-favourite favourite-btn" type="button">
           <svg class="favourite-btn__img" width="20" height="32" aria-label="добавить в избранное">
             <use xlink:href="img/sprite.svg#label"></use>
@@ -79,7 +77,7 @@
         </div>
 
         <div class="card__item-name">
-          <p class="card__item-name-subtitle">Blackberry</p>
+          <h2 class="card__item-name-subtitle">Blackberry</h2>
           <span class="card__item-name-text">Fresh drink</span>
         </div>
 
@@ -123,7 +121,7 @@
   <div class="search__wrapper">
     <a class="search__link-favourite" href="favourite.html">Избранное</a>
 
-    <form class="search__form" role="search" id="form">
+    <form class="search__form" action="search.html" method="get" role="search">
       <input class="search__input search__input--index" type="search" id="search" name="search" placeholder="Введите название" aria-label="Поиск по сайту">
       <button class="search__button button">
         <svg class="search__icon" width="24" height="24" aria-label="кнопка поиска">

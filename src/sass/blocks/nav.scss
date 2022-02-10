@@ -1,6 +1,11 @@
 .nav__list {
   @include clear-list;
   display: flex;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   @media (min-width: $display-tablet) {
     min-width: 384px;
@@ -19,5 +24,4 @@
     border: 1px solid $grey;
     border-radius: 32px;
   }
-
 }

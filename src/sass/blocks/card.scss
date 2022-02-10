@@ -1,8 +1,8 @@
 .card__wrapper {
   @media (min-width: $display-tablet) {
     display: flex;
-    justify-content: space-evenly;
-    row-gap: 32px;
+    justify-content: flex-start;
+    gap: 32px;
     flex-wrap: wrap;
 
     &--search {

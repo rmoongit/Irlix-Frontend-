@@ -24,7 +24,7 @@
 
 .card-description__info {
   position: absolute;
-  background-image: url("data:image/svg+xml,%3Csvg width='384' height='203' viewBox='0 0 384 203' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80.5 136.243C5.5 124.743 -18 92.7434 -26 45.2434L-41 0.243414H535.5C544.667 -1.92325 470 45.2434 441 111.5C409.518 183.426 337.5 196.243 296 202.243C254.5 208.243 155.5 147.743 80.5 136.243Z' fill='%23201F2E'/%3E%3C/svg%3E%0A");
+  background-image: $decor;
   background-color: $black;
   background-position: top;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@
     flex-grow: 1;
 
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       width: 100%;
       margin: 5px 5px;
