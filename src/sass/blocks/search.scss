@@ -2,11 +2,15 @@
   background-color: $black;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
+
+  @media (min-width: $display-tablet) {
+    border-radius: 32px;
+  }
 }
 
 .search__wrapper {
@@ -45,6 +49,7 @@
 }
 
 .search__input {
+  width: 100%;
   border-radius: 32px;
   border: none;
   outline: none;
@@ -55,5 +60,14 @@
 
   &--index {
     display: none;
+  }
+}
+
+.search__form {
+  display: flex;
+  justify-content: space-between;
+
+  &--width {
+    width: 100%;
   }
 }

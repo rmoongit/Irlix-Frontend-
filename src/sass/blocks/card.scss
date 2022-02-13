@@ -1,13 +1,13 @@
 .card__wrapper {
+  &--search {
+    display: flex;
+  }
+
   @media (min-width: $display-tablet) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
-
-    &--search {
-      justify-content: center;
-    }
   }
 }
 
@@ -18,8 +18,11 @@
 
   &--search {
     margin-bottom: 175px;
-    flex-grow: 1;
   }
+}
+
+.card__img {
+  margin: 0 auto;
 }
 
 .card__item-title {

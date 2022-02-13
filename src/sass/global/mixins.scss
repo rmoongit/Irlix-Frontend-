@@ -3,11 +3,12 @@
 @mixin container() {
   margin: 0 auto;
   padding: 0 30px 0;
-  min-width: 320px;
+  max-width: 320px;
 }
 
 @mixin tablet() {
   width: 100%;
+  max-width: 768px;
 }
 
 @mixin desktop() {
