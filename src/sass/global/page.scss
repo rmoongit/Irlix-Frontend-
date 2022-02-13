@@ -1,11 +1,17 @@
 .page {
   position: relative;
+  height: 100%;
+
+  .page__links {
+    margin-left: 30px;
+  }
 }
 
 .page__body {
+  height: 100%;
   min-width: 320px;
   margin: 0;
-  padding: 0 0 175px;
+  padding: 0;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
@@ -13,9 +19,13 @@
   font-family: $main-font;
 }
 
+.page__main {
+  height: 100%;
+}
+
 img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
